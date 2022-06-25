@@ -6,24 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
-            border: 1cm ;
+        body{
+            margin: 5cm ;
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
- <form action="sublimit">
-    <label for="name">Nombre</label>
-    <input id="name" type="text">
-    <br>
-    <label for="apellido">apellido</label>
-    <input id="apellido" type="text">
-    <br>
-    <label for="sexo">Genero</label>
-    <input type="radio" value="">
-    <input type="radio" value="">
-    <input type="radio" value="">
-    </fieldset>
+
  </form>
+ <form action="index.php" method="post">
+    <ul>
+     <li>
+       <label for="name">Nombre:
+       <input type="text" id="name" name="user_name" required/></label>
+     </li>
+     <li>
+        <label for="apellido">Apellido:
+        <input type="text" required></label>
+     </li>
+     <li>
+       <label for="mail">Correo electrónico:
+       <input type="email" id="mail" name="user_email" /></label>
+     </li>
+     <li>
+        <p>
+            genero:<br>
+            <label><input type="radio" name="genero" value="femenino"> femenino</label><br>
+            <label><input type="radio" name="genero" value="masculino"> masculino</label><br>
+            <label><input type="radio" name="genero" value="otro">otro</label>
+          </p>
+    </li>
+     <li>
+        <label for="year">Edad:
+        <input type="date"></label>
+     </li>
+     <li>
+        <label for="deporte">deporte favorito:<select type="" id="deporte"> </label>
+     </li>
+     <br><br>
+     <footer>
+    <p><input type="submit" value="Enviar formulario"></p>
+    </footer>
 </body>
 </html>
